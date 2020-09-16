@@ -4,16 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      .box {
+        display: flex;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        background-color: #eee;
+        flex-direction: row;
+      }
+      .item {
+        flex-grow: 999;
+        width: 120px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        color: white;
+        text-align: center;
+        word-wrap: break-word;
+        background-color: #ffa400;
+        margin: 5px;
+      }
+
+      .box2 {
+        display: flex;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        background-color: #eee;
+        flex-direction: row; 
+      }
+
+      .item2 {
+        flex-grow: 1;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        color: white;
+        text-align: center;
+        word-wrap: break-word;
+        background-color: #ffa400;
+        margin: 5px;
+      }
+      .item2:nth-of-type(3) {
+        flex-grow: 3;
+        background-color: red;
+      }
+
+    </style>
 </head>
 <body>
     
-<div class="box">
-    <div class="item">1</div>
-    <div class="item">2</div>
-    <div class="item">3</div>
-    <div class="item">4</div>
-    <div class="item">5</div>
-    <div class="item">6</div>
+  <div class="box">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
   </div>
+  <div class="box2">
+    <div class="item2">1</div>
+    <div class="item2">2</div>
+    <div class="item2">3</div>
+    <div class="item2">4</div>
+    <div class="item2">5</div>
+    <div class="item2">6</div>
+</div>
 </body>
 </html>
